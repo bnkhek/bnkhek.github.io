@@ -25,11 +25,9 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Research</a></li>
           <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
@@ -39,15 +37,43 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <span>Brandon Khek</span>
+          <span class = "nameAnimation">Brandon Khek</span>
         </h1>
-        <p>Astrophysics student at Rice University</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p class = "nameAnimation">Astrophysics student at Rice University</p>
+        <a href="#contact" class="btn btn--pink nameAnimation">Get in touch</a>
       </div>
     </div>
   </header>
 
   <main role="main">
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I'm <strong>Brandon Khek</strong>, a third-year astrophysics student at Rice University.
+              I an undergraduate student interested in early and late universe cosmology, astroparticle physics, 
+              and compact objects. Besides my experience in physics, I am also well versed in upper-level college mathematics such 
+              as complex analysis and partial differential equations. My extensive experience with computers 
+              and programming such as Python, Mathematica, 
+              and Unix make me a versatile worker as I prepare for a career in theoretical astrophysics research. 
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ***** Research ***** -->
 
@@ -66,18 +92,14 @@
                 In this project, I explore what we can learn from primordial gravitational radiation and how it manifests itself today. 
               </p>
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>Early universe cosmology</li>
+                <li>Astroparticle physics</li>
+                <li>MATLAB and Mathematica</li>
               </ul>
 
               <div class="work__links">
                 <a href="./higgs.html" target="_blank" class="link__text">
                   Visit Project Page <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
@@ -88,24 +110,20 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Spherical Fourier-Bessel basis power spectrum</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Upcoming deep, wide-angle galaxy surveys such as SPHEREx and JWST give us a lot of data to process. In this project,
+                I maximize the extraction of cosmological information from these surveys by creating an SFB power spectrum of density fluctuations in the universe. 
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Large-scale structure</li>
+                <li>Late universe cosmology</li>
+                <li>Julia programming</li>
               </ul>
 
               <div class="work__links">
                 <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                  Visit Project Page <span>&rarr;</span>
                 </a>
               </div>
             </div>
@@ -116,24 +134,21 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>Axion-photon conversions in neutron star magnetospheres</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Axions, a candidate for what comprises cold dark matter, are rather difficult to detect experimentally. 
+                There is a possibility of the axions undergoing conversion into detectable radio photons, and 
+                here I calculate the probability of this happening. 
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Astroparticle physics</li>
+                <li>Compact objects</li>
+                <li>Mathematica</li>
               </ul>
 
               <div class="work__links">
                 <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                  Visit Project Page <span>&rarr;</span>
                 </a>
               </div>
             </div>
@@ -152,38 +167,15 @@
         <h2>Clients</h2>
         <div class="client__logos">
           <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <div>
+            <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+            <p>Test text Test text Test text Test text Test text</p>
+          </div>
           <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
           <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
           <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
           <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
           <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
-          </div>
         </div>
       </div>
     </section>
@@ -196,15 +188,10 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          I'd love to connect with you. Please reach out if you're interested in chatting.
         </p>
         <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <a href="mailto:bnk1@rice.edu" class="btn">brandon.n.khek@rice.edu</a>
       </div>
     </div>
   </section>
@@ -237,15 +224,12 @@
         </li>
       </ul>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <!-- Footer text -->
       <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+        Brandon Khek | 1605 Rice Blvd. • Houston, TX 77005
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
+      <div>
+        <p>brandon.n.khek --at-- rice.edu</p>
       </div>
     </div>
   </footer>
