@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/hatPot.svg" />
+  <link rel="shortcut icon" type="image/png" href="./images/hatPot.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Site title here -->
@@ -28,6 +28,7 @@
         <ul class="nav__items">
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Research</a></li>
+          <li class="nav__item"><a href="#teaching" class="nav__link">Teaching</a></li>
           <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
@@ -113,8 +114,8 @@
             <div class="work__text">
               <h3>Spherical Fourier-Bessel basis power spectrum</h3>
               <p>
-                Upcoming deep, wide-angle galaxy surveys such as SPHEREx and JWST give us a lot of data to process. In this project,
-                I maximize the extraction of cosmological information from these surveys by creating an SFB power spectrum of density fluctuations in the universe. 
+                Upcoming deep, wide-angle galaxy surveys such as SPHEREx and JWST give us a lot of data to process. In this summer,
+                fellowship, I maximize the extraction of cosmological information from these surveys by creating an SFB power spectrum of density fluctuations in the universe. 
               </p>
               <ul class="work__list">
                 <li>Large-scale structure</li>
@@ -162,16 +163,12 @@
     </section>
 
     <!-- ***** Clients ***** -->
-
+    <!--
     <section class="client" id="clients">
       <div class="row">
         <h2>Clients</h2>
         <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <div>
-            <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-            <p>Test text Test text Test text Test text Test text</p>
-          </div>
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
           <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
           <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
           <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
@@ -180,6 +177,56 @@
         </div>
       </div>
     </section>
+    -->
+
+    <!-- ***** Teaching ***** -->
+
+    <section class="about" id="teaching">
+      <div class="row">
+        <h2>Teaching</h2>
+
+        <!-- COLL 106-->
+        <div class="about__content">
+          <div class="about__text">
+            <h3>COLL 106: Dissecting Physics Pop Science</h3>
+            <p>
+              COLL is a class code, short for COLLege course, 
+              which are student-taught courses. After a semester of training, 
+              Rice students can teach a COLL course on anything they'd like. 
+              In my course, I aim to give deeper insight on physics 
+              popular science topics, such as the Higgs boson and black holes, 
+              by exploring the mathematical formulation behind them. 
+            </p>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo -->
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
+        </div>
+        
+        <!-- RCEL -->
+        <div class="about__content" style = "flex-direction: row;">
+          <div class="about__text" style = "margin: 0 var(--gutter-huge) 0 0;">
+            <h3>RCEL ELITE Tech Camp</h3>
+            <p>
+              Over the summer of 2020 I had the pleasure of teaching 28 
+              high school students machine learning in Python through RCEL - 
+              the Rice Center for Engineering Leadership. We used anomaly 
+              detection algorithms to analyze meteorological data. Examples
+              include the Isolation Forest and Local Outlier Factor algorithms,
+              aided with powerful libraries like SciKitLearn and MatPlotLib. 
+            </p>
+          </div>
+
+          <div class="about__photo-container" style = "margin: 0">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ***** Contact ***** -->
