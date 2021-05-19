@@ -440,11 +440,13 @@ body:not(.user-is-tabbing) a:focus {
   margin-top: 25px;
   text-align: center;
 
-  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2.5s; /* Firefox < 16 */
-  -ms-animation: fadein 2.5s; /* Internet Explorer */
-  -o-animation: fadein 2.5s; /* Opera < 12.1 */
-  animation: fadein 2.5s;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fadein {
@@ -585,10 +587,15 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- About ----- */
 /* --------------------------------------- */
 
-.about__content {
+.about__content,
+#aboutRightOriented {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+}
+
+#about__RightOriented {
+  flex-direction: row;
 }
 
 @media (max-width: 900px) {
@@ -598,7 +605,8 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
-.about__photo-container {
+.about__photo-container,
+#about__PhotoContainerRightOriented {
   margin-bottom: var(--gutter-normal);
 }
 
@@ -610,6 +618,11 @@ body:not(.user-is-tabbing) a:focus {
   .about__photo-container {
     flex: 1;
     margin: 0 var(--gutter-huge) 0 0;
+  }
+
+  #about__PhotoContainerRightOriented {
+    flex: 1;
+    margin: 0 0 0 var(--gutter-huge);
   }
 }
 
