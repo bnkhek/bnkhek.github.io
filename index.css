@@ -588,7 +588,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .about__content,
-#aboutRightOriented {
+#about__RightOriented {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
