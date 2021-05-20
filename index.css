@@ -599,7 +599,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media (max-width: 900px) {
-  .about__content {
+  .about__content,
+  #about__RightOriented {
     flex-direction: column-reverse;
     align-items: initial;
   }
