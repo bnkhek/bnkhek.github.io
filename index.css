@@ -176,6 +176,10 @@ p {
   margin: var(--gutter-small-1) 0;
 }
 
+p.header-intro {
+  margin: var(--gutter-medium) 0;
+}
+
 @media (max-width: 900px) {
   p {
     max-width: var(--container-small-width);
