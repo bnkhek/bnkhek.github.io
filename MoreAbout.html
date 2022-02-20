@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/hatPot.png" />
+
+  <!-- Site title here -->
+  <title>
+    Brandon Khek | Astrophysics student at Rice University
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="https://bnkhek.github.io/" class="nav__link">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>About Me</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Hobbies and Other Interests</h2>
+      <div class="contact__info">
+        <h2>Chess</h2>
+        <p>
+            I like to play chess! When I'm winning, at least. I found chess
+            to be a very brutal game. Wins and losses are dependent solely
+            on your own skill level relative to your opponent. This is nice
+            in the sense that you don't have to rely on luck - though I suppose
+            there's luck in who you get matched up with. Though, the absence of 
+            all variables except your own chess aptitude puts a lot of exciting
+            pressure to perform. Here's a less embarassing game of mine from January 17, 2022. 
+            I had almost perfect play in a 3+2 (!) time format. 
+        </p>
+        <iframe src="https://lichess.org/embed/E0TnaOKs?theme=auto&bg=auto"
+          width=600 height=397 frameborder=0></iframe>
+      </div>
+    </div>
+  </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="teaching">
+      <div class="row">
+        <h2>Photos</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              At the NASA HQ in D.C.
+            </p>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo -->
+            <img class="about__photo" src="./images/nasa.jpg" alt="" />
+          </div>
+        </div>
+        
+        <!-- RCEL -->
+        <div id = "about__RightOriented">
+          <div class="about__text">
+            <p>
+              In a Zoom meeting with some iconic scientists! This was for Dr.
+              Charles Bennet's celebration of the Rumford Prize. Also, Rainer Wiess is
+              awesome.
+            </p>
+          </div>
+
+          <div id = "about__PhotoContainerRightOriented">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/rumford.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://www.facebook.com/Rice.Physics.Astronomy" title="Link to PHYSA Facebook Profile">
+            <i class="fa fa-facebook-official" style="font-size:4rem;color:var(--white)"></i>
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/brandon-khek-5b5b5116a/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- Footer text -->
+      <p>
+        Brandon Khek | 1605 Rice Blvd. • Houston, TX 77005
+      </p>
+      <div>
+        <p>brandon.n.khek@rice.edu</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
