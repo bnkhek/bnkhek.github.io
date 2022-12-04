@@ -39,7 +39,7 @@
           <span class = "nameAnimation">Brandon Khek</span>
         </h1>
         <p class = "nameAnimation">Astrophysics and math student at Rice University</p>
-        <a href="#contact" class="btn btn--pink nameAnimation">Get in touch</a>
+        <!-- <a href="#contact" class="btn btn--pink nameAnimation">Get in touch</a> -->
       </div>
     </div>
   </header>
@@ -56,11 +56,12 @@
             <!-- Replace the below paragraph with info about yourself -->
             <p>
               I'm <strong>Brandon Khek</strong>, a fourth-year astrophysics and math student at Rice University.
-              I am an undergraduate student interested astroparticle physics, cosmology, compact objects, and high energy physics. 
-              Besides my experience in physics, I am also well versed in upper-level college mathematics such 
+              I am an undergraduate student interested astroparticle physics, early and late universe cosmology,
+              string theory, and quantum gravity.
+              Besides having a physics background, I am also well versed in upper-level undergraduate mathematics such 
               as complex analysis and differential geometry. My extensive experience with computers 
               and programming such as Python, Mathematica, 
-              and Unix makes me a versatile worker as I prepare for a career in theoretical physics research. 
+              and Unix makes me a versatile researcher as I prepare for a career in theoretical physics research. 
             </p>
           </div>
 
@@ -77,22 +78,80 @@
     <section class="work" id="work">
       <div class="row">
         <h2>Research</h2>
-        <p class="header-intro">During my sophomore year, I found that research would be an 
-          invaluable component of my experience at Rice. Undergraduate research serves as a way to 
-          explore my curiosities and delineate interests for postgraduate studies.
-          I find joy in presenting my work to others 
-          and communicating astrophysics. Below are a 
-          few highlights of my research experience.</p>
+        <p class="header-intro">As an undergrauate, I have been very fortunate in having opportunities
+          to engage in astrophysics research at SLAC, JPL, and Rice. I have explored my curiosities in areas
+          such as machine learning, large-scale structure, and early universe cosmology. I would like to move
+          toward research in high energy theoretical physics which includes areas like
+          inflationary physics, quantum gravity, and the nature of dark energy.
+          I also find joy in presenting my work to others communicating all of the cool things that I've learned!
+          Below are some highlights of my research experiences and a few associated outcomes.</p>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
+              <h3>Machine Learning in Gamma Ray Astronomy</h3>
+              <p>
+                The low MeV gamma ray sky is poorly measured, motivating the proposal of a new instrument, GammaTPC.
+                I worked on optimimizing the instrument's ability to resolve gamma ray sources
+                with convolutional neural networks through event reconstruction of Compton scatters within the observatory.
+              </p>
+              <ul class="work__list">
+                <li>Machine learning</li>
+                <li>Gamma ray astronomy</li>
+                <li>Python programming</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="slac.html" class="link__text">
+                  Visit Project Page <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/3D_Plot_1000keV_1cm_2um.png" class="work__image" alt="Electron recoil track" />
+              <p>Readout of charges liberated from a scattered electron, and the ML predictions (green) and true values (orange).
+            </div>
+          </div>
+
+          <!-- =-=-=-=-=-=-=-=-=-=-=-= -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Spherical Fourier-Bessel basis power spectrum</h3>
+              <p>
+                Upcoming deep, wide-angle galaxy surveys such as SPHEREx and NGRST give us a lot of data to process. In this summer,
+                fellowship, I maximize the extraction of cosmological information from these surveys by creating code to construct the theoretical
+                SFB power spectrum of density fluctuations in the universe. 
+              </p>
+              <ul class="work__list">
+                <li>Large-scale structure</li>
+                <li>Galaxy surveys</li>
+                <li>Julia programming</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="jpl.html" class="link__text">
+                  Visit Project Page (WIP) <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/2D_Cl_fnl_and_Cuts.png" class="work__image" alt="SFB Power Spectrum with nonzero fNL" />
+              <p>The effect of nonzero PNG amplitude on the SFB PS. Clustering is amplified at large scales.</p>
+            </div>
+          </div>
+
+          <!-- =-=-=-=-=-=-=-=-=-=-=-= -->
+
+          <div class="work__box">
+            <div class="work__text">
               <h3>Gravitational waves resulting from Higgs field inhomogeneities</h3>
               <p>
                 Gravitational waves serve as a window into the very early universe. 
-                In this project, I explore what we can learn from primordial gravitational radiation and how it manifests itself today. 
+                In this project, I explored the observational prospects of primordial gravitational radiation emitted
+                from phase transitions in the early universe. 
               </p>
               <ul class="work__list">
                 <li>Early universe cosmology</li>
@@ -111,29 +170,7 @@
             </div>
           </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Spherical Fourier-Bessel basis power spectrum</h3>
-              <p>
-                Upcoming deep, wide-angle galaxy surveys such as SPHEREx and NGRST give us a lot of data to process. In this summer,
-                fellowship, I maximize the extraction of cosmological information from these surveys by creating the SFB power spectrum of density fluctuations in the universe. 
-              </p>
-              <ul class="work__list">
-                <li>Large-scale structure</li>
-                <li>Late universe cosmology</li>
-                <li>Julia programming</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="jpl.html" class="link__text">
-                  Visit Project Page (WIP) <span>&rarr;</span>
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/Cl10.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+          <!-- =-=-=-=-=-=-=-=-=-=-=-= -->
 
         </div>
       </div>

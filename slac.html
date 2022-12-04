@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/hatPot.png" />
+
+  <!-- Site title here -->
+  <title>
+    Brandon Khek | Astrophysics student at Rice University
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="https://bnkhek.github.io/" class="nav__link">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Gravitational waves from the Higgs field</span>
+        </h1>
+        <p>SLAC National Accelerator Laboratory | Supervised by Drs. Aashwin Mishra, Micah Buuck, and Thomas Shutt</p>
+        <p>Summer 2022 - Fall 2022</p>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Project Overview</h2>
+      <div class="contact__info">
+        <p>
+          GammaTPC is an instrument concept that aims to measure the low MeV sky, which is currently
+          poorly constrained. GammaTPC utilizes the same Time Projection Chamber technology seen in 
+          experiments from the XENON collaboration or ALICE at CERN. Incident gamma photons scatter
+          electrons within the vat of liquid argon contained within the observatory, and to most accurately determine
+          where the photon came from, we need to know the kinematic parameters of the scattering event:
+          the location of the event and initial direction of the recoiled electron. My goal in this project
+          is to back out these parameters with a machine learning model to minimize the point spread function
+          of the image of the gamma ray source. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>Results</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I trained the model on a set of approximately 100,000 electron tracks at a fixed energy. These 
+              were very performant in that we achieved sub-mm accuracy for the interaction location
+              predictions and initial scattering direction errors usually on the order of a few degrees. 
+              The models were not as accurate when trained on a broader data set consisting of varying
+              energies, showcasing a limitation of the work which may be resolved with a more
+              complex archiecture optimized for the larger data set. 
+            </p>
+            <!-- Provide a link to your resume -->
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/gw.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- ***** What I Did ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>What I did with the project</h2>
+      <div class="contact__info">
+        <p>
+          I presented this project at the 2022 Ignite Off! Competition at SLAC and won! It's only
+          five minutes, though took (many) hours to make, though I'm proud of it. Take a look at 41:41 in the video
+          below. I also presented this work at the end of the summer internship at SLAC and at the Texas APS
+          meeting in October 2022, winning the best undergradate poster presentation award. Finally, the work
+          was published in <i>AI</i>. 
+        </p>
+        <h3>Ignite Off! Competition (41:41)</h3>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/734107278?h=3e73d30a26" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
+        <h3>TSAPS Poster</h3>
+        <iframe src="./documents/TSAPS Poster Presentation.pdf" width="100%" height="500px"></iframe>
+        <h3>AI Paper</h3>
+        <iframe src="./documents/ai.pdf" width="100%" height="500px"></iframe>
+        <a href ="https://www.mdpi.com/2673-2688/3/4/58">
+          Link to paper.
+        </a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://www.facebook.com/Rice.Physics.Astronomy" title="Link to PHYSA Facebook Profile">
+            <i class="fa fa-facebook-official" style="font-size:4rem;color:var(--white)"></i>
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/brandon-khek-5b5b5116a/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- Footer text -->
+      <p>
+        Brandon Khek | 1605 Rice Blvd. • Houston, TX 77005
+      </p>
+      <div>
+        <p>brandon.n.khek@rice.edu</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
