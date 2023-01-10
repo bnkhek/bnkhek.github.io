@@ -55,8 +55,8 @@
           electrons within the vat of liquid argon contained within the observatory, and to most accurately determine
           where the photon came from, we need to know the kinematic parameters of the scattering event:
           the location of the event and initial direction of the recoiled electron. My goal in this project
-          is to back out these parameters with a machine learning model to minimize the point spread function
-          of the image of the gamma ray source. 
+          is to accurately back out these parameters with a machine learning model to minimize the diffusion 
+          of the gamma ray source in the image. 
         </p>
       </div>
     </div>
@@ -71,7 +71,7 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I trained the model on a set of approximately 100,000 electron tracks at a fixed energy. These 
+              I trained models on a set of approximately 100,000 electron tracks each at a fixed energy. These 
               were very performant in that we achieved sub-mm accuracy for the interaction location
               predictions and initial scattering direction errors usually on the order of a few degrees. 
               The models were not as accurate when trained on a broader data set consisting of varying
@@ -85,7 +85,7 @@
             <!-- Add a nice photo of yourself -->
             <img class="about__photo" src="./images/GTPC_dir_error.png" alt="" />
             <p>Direction error for the initial direction model trained on one energy, drift distance, and pixel pitch.
-              The model is highly accurate for small drift distances though decreases in performance as the distance
+              The model is highly accurate for small drift distances, though decreases in performance as the distance
               increases due to charge diffusion. 
             </p>
           </div>
@@ -101,7 +101,7 @@
       <div class="contact__info">
         <p>
           I presented this project at the 2022 Ignite Off! Competition at SLAC and won! It's only
-          five minutes, though took (many) hours to make, though I'm proud of it. Take a look at 41:41 in the video
+          five minutes, though took (surprisingly) many hours to make. Take a look at 41:41 in the video
           below. I also presented this work at the end of the summer internship at SLAC and at the Texas APS
           meeting in October 2022, winning the best undergradate poster presentation award. Finally, the work
           was published in <i>AI</i>; more details can be found there for those interested.  
