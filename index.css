@@ -498,7 +498,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__box {
   display: flex;
-  align-items: center;
 }
 
 @media (max-width: 900px) {
@@ -545,7 +544,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
-  margin-bottom: var(--gutter-normal);
+  display: flex;
+}
+
+.work__image {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 @media (min-width: 901px) {
