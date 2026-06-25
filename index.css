@@ -499,6 +499,7 @@ body:not(.user-is-tabbing) a:focus {
 .work__box {
   display: flex;
   align-items: center;
+  gap: var(--gutter-huge);
 }
 
 @media (max-width: 900px) {
@@ -545,18 +546,22 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: var(--gutter-normal);
 }
 
 .work__image {
-  height: 40rem;
+  height: 60rem;
   vertical-align: middle;
 }
 
 @media (min-width: 901px) {
   .work__image-box {
     flex: 1;
-    margin: 0 0 0 10rem;
+    margin: 0;
+    padding: 0 var(--gutter-medium);
   }
 }
 
@@ -656,6 +661,11 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__photo-container {
   margin-bottom: var(--gutter-normal);
+}
+
+.about__photo {
+  height: 40rem;
+  object-fit: cover;
 }
 
 @media (min-width: 901px) {
