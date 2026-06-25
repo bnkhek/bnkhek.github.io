@@ -602,18 +602,21 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .about__content,
+.about__right-oriented,
 #about__RightOriented {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 
+.about__right-oriented,
 #about__RightOriented {
   flex-direction: row;
 }
 
 @media (max-width: 900px) {
   .about__content,
+  .about__right-oriented,
   #about__RightOriented {
     flex-direction: column-reverse;
     align-items: initial;
@@ -621,6 +624,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__photo-container,
+.about__photo-container--right,
 #about__PhotoContainerRightOriented {
   margin-bottom: var(--gutter-normal);
 }
@@ -635,6 +639,7 @@ body:not(.user-is-tabbing) a:focus {
     margin: 0 var(--gutter-huge) 0 0;
   }
 
+  .about__photo-container--right,
   #about__PhotoContainerRightOriented {
     flex: 1;
     margin: 0 0 0 var(--gutter-huge);
@@ -645,38 +650,13 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Teaching ----- */
 /* --------------------------------------- */
 
-.about__content {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+#teaching .about__content {
   margin-bottom: 18rem;
-}
-
-@media (max-width: 900px) {
-  .about__content {
-    flex-direction: column-reverse;
-    align-items: initial;
-  }
-}
-
-.about__photo-container {
-  margin-bottom: var(--gutter-normal);
 }
 
 .about__photo {
   height: 40rem;
   object-fit: cover;
-}
-
-@media (min-width: 901px) {
-  .about__text {
-    flex: 0 0 35%;
-  }
-
-  .about__photo-container {
-    flex: 1;
-    margin: 0 var(--gutter-huge) 0 0;
-  }
 }
 
 /* --------------------------------------- */
